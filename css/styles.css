@@ -1,0 +1,174 @@
+body, html
+{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+
+#main-container
+{
+    position:relative;
+    min-height: 100%;
+    width: 100%;
+}
+
+.wrapper .container
+{
+    padding-top: 40px;
+}
+
+.wrapper.main_wrapper
+{
+    background: url(/password-keeper/images/retina_wood.png) repeat;
+}
+
+.wrapper .container #dashboard-table th
+{
+    text-align: center;
+}
+
+.wrapper .container #dashboard-table table
+{
+    border-spacing: 0;
+    border-color: #000000;
+}
+
+.wrapper .container #dashboard-table tr.selected td
+{
+    background: none;
+}
+
+.block{}
+
+.block_title
+{
+    width: 868px;
+    margin: 45px auto;
+    height: 56px;
+}
+
+.block_1{}
+
+.block_1 .block_title
+{
+    background: url(/password-keeper/images/intro-title.png);
+}
+.block_2{}
+
+.block_2 .block_title
+{
+    background: url(/password-keeper/images/concept-title.png);
+}
+
+.block_3{}
+
+.block_3 .block_title
+{
+    background: url(/password-keeper/images/website-title.png);
+}
+
+.block .block_content
+{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.block .block_image
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block .block_text
+{
+    font-size: 18px;
+    line-height: 30px;
+    color: #000;
+    font-family: Arial;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.block_1 .block_text
+{
+    margin-left: 45px;
+    width: 735px;
+}
+
+.block_2 .block_text
+{
+    margin-left: 45px;
+    width: 650px;
+}
+
+.block_3 .block_text
+{
+    width: 650px;
+    margin-right: 45px;
+}
+
+footer
+{
+    height: 70px; /* высота футера */
+    color: #fff;
+    margin-top: -70px;
+    position: relative;
+}
+
+footer .footer-line
+{
+    background: url(/password-keeper/images/footer-line.png) repeat-x;
+    height: 10px;
+    width: 100%;
+}
+
+footer .footer-content
+{
+    background: url(/password-keeper/images/footer-background.png) repeat;
+    width: 100%;
+}
+
+footer .footer-content .footer-content-centered
+{
+    margin: 0 auto;
+    width: 1170px;
+}
+
+footer .footer-content
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+footer .footer-content .signature
+{
+    margin: 20px 0 20px 0;
+    float: left;
+}
+
+footer .footer-content .footer-contact
+{
+    margin: 20px 0 20px 0;
+    float: right;
+}
+footer .footer-content .footer-contact a
+{
+    color: #fff;
+}
+footer .footer-content .footer-contact a:hover
+{
+    color: #00D5FF;
+}
+
+
+.footer-correction
+{
+    height: 115px;
+}
+
+.clear
+{
+    clear: both;
+}
