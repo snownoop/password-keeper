@@ -17,7 +17,7 @@ $this->pageTitle = 'Sign in';
 
         <?php $this->widget('bootstrap.widgets.TbGridView', array(
             'id' => 'dashboard-table',
-            'type'=>'',
+            'type' => '',
             'dataProvider' => $model->search(),
 //            'filter'=>$model,
             'enablePagination' => true,
@@ -44,6 +44,7 @@ $this->pageTitle = 'Sign in';
                 ),
                 array(
                     'class' => 'bootstrap.widgets.TbButtonColumn',
+                    'template' => '{view}{update}{delete}',
                 ),
             ),
         )); ?>

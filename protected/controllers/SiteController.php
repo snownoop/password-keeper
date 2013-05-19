@@ -116,7 +116,10 @@ class SiteController extends Controller
 
     public function actionView()
     {
+        $recordId = Yii::app()->request->getQuery('id');
 
+        $model = Data::model()->findByPk($recordId);
+        $this->render('view', array('model' => $model));
     }
 
     public function actionTesting()

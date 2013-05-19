@@ -172,3 +172,15 @@ footer .footer-content .footer-contact a:hover
 {
     clear: both;
 }
+
+
+.progress
+{
+    margin: 0 !important;
+}
+
+/*Fix width of complexity progress bar in view page.*/
+.detail-view tr td .progress
+{
+    width: 174px;
+}
