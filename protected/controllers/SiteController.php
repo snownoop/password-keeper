@@ -13,9 +13,17 @@ class SiteController extends Controller
         $this->render('about');
     }
 
+    public function loadDataModel($id)
+    {
+        $model = Data::model()->findByPk((int)$id);
+        if ($model === null)
+            throw new CHttpException(404, 'Запрошенная страница не существует.');
+        return $model;
+    }
+
     public function actionIndex()
     {
-        if(Yii::app()->user->isGuest)
+        if (Yii::app()->user->isGuest)
         {
             $this->redirect('site/about');
         }
@@ -35,6 +43,10 @@ class SiteController extends Controller
             if ($model->save())
             {
                 $this->redirect('signIn');
+            }
+            else
+            {
+                $this->redirect('signUp');
             }
         }
         else
@@ -82,7 +94,7 @@ class SiteController extends Controller
     {
         if (Yii::app()->user->id)
         {
-            $model=new Data('search');
+            $model = new Data('search');
 
             $this->render('dashboard', array('model' => $model));
         }
@@ -92,46 +104,65 @@ class SiteController extends Controller
         }
     }
 
-    public function actionPreferences()
+    public function actionUpdate()
     {
-        if (Yii::app()->user->id)
-        {
-            $this->render('preferences');
-        }
-        else
-        {
-            $this->render('404');
-        }
-    }
+        $recordId = Yii::app()->request->getQuery('id');
 
-    public function actionEdit()
-    {
+        $model = $this->loadDataModel($recordId);
 
+        $model->password = $this->decodePassword($model->password, $model->salt);
+
+        if (isset($_POST['Data']))
+        {
+            $model->attributes = $_POST['Data'];
+            if ($model->save())
+            {
+                Yii::app()->user->setFlash('success', '<strong>Well done!</strong> You successfully edit a record.');
+                $this->redirect(array('site/dashboard'));
+            }
+        }
+
+        $this->render('update', array('model' => $model));
     }
 
     public function actionDelete()
     {
+        $recordId = Yii::app()->request->getQuery('id');
 
+        $model = $this->loadDataModel($recordId);
+        $model->delete();
     }
 
     public function actionView()
     {
         $recordId = Yii::app()->request->getQuery('id');
 
-        $model = Data::model()->findByPk($recordId);
+        $model = $this->loadDataModel($recordId);
+        $model->password = $this->decodePassword($model->password, $model->salt);
         $this->render('view', array('model' => $model));
     }
 
-    public function actionTesting()
+    public function actionAdd()
     {
-        $model = Data::model()->findByPk(4);
-        echo strlen(preg_replace('/[^A-Z]+/', '', $model->password));
-        echo preg_match_all('/[a-z]/', $model->password, $matches);
+        $model = new Data();
 
-        echo $model->password;
+        if (isset($_POST['Data']))
+        {
+            $model->attributes = $_POST['Data'];
+            $model->id_user = Yii::app()->user->id;
+            if ($model->save())
+            {
+                Yii::app()->user->setFlash('success', '<strong>Well done!</strong> You successfully edit a record.');
+                $this->redirect(array('site/dashboard'));
+            }
+        }
 
-        echo "<pre>";
-        print_r($matches);
-        echo "</pre>";
+        $this->render("add", array('model' => $model));
+    }
+
+    private function decodePassword($password, $salt)
+    {
+        $password = base64_decode($password);
+        return str_replace($salt, "", $password);
     }
 }

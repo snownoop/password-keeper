@@ -33,8 +33,6 @@
                 'htmlOptions' => array('class' => 'pull-right'),
                 'items' => array(
                     array('label' => Yii::app()->user->name, 'url' => '#', 'visible' => !Yii::app()->user->isGuest, 'items' => array(
-                        array('label' => 'Preferences', 'url' => array('site/preferences')),
-                        '---',
                         array('label' => 'Logout', 'url' => array('site/logout')),
                     )),
                 ),

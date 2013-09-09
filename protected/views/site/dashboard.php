@@ -12,6 +12,9 @@ $this->pageTitle = 'Sign in';
 
 <div class="row">
     <div class="span12">
+
+        <?php $this->widget('bootstrap.widgets.TbAlert'); ?>
+
         <h1>Dashboard</h1>
 
 
@@ -35,6 +38,7 @@ $this->pageTitle = 'Sign in';
                 array(
                     'name' => 'password',
                     'header' => 'Password',
+                    'value' => '$data->decodedPassword',
                 ),
                 array(
                     'name' => 'complexity',
@@ -48,6 +52,12 @@ $this->pageTitle = 'Sign in';
                 ),
             ),
         )); ?>
+
+        <div class="buttons">
+            <div class="button-new">
+                <?php $this->widget('bootstrap.widgets.TbButton', array('label' => 'Add new +', 'type'=>'success', 'url' => array('/site/add'))); ?>
+            </div>
+        </div>
 
     </div>
 </div>

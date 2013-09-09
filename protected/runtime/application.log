@@ -6663,3 +6663,982 @@ Stack trace:
 REQUEST_URI=/password-keeper/site/1
 HTTP_REFERER=http://localhost/password-keeper/site/dashboard
 ---
+2013/05/23 13:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\wamp\www\frameworks\yii\1.1.12\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(271): CController->missingAction('update')
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('update')
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/update')
+#3 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/password-keeper/site/update/1
+HTTP_REFERER=http://localhost/password-keeper/site/dashboard
+---
+2013/05/23 13:15:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "update".' in C:\wamp\www\frameworks\yii\1.1.12\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(271): CController->missingAction('update')
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('update')
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/update')
+#3 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/password-keeper/site/update/1
+HTTP_REFERER=http://localhost/password-keeper/site/dashboard
+---
+2013/05/23 13:18:42 [error] [exception.CException] exception 'CException' with message 'Property "Data.title" is not defined.' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(144): CComponent->__get('title')
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\helpers\CHtml.php(2158): CActiveRecord->__get('title')
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\helpers\CHtml.php(1887): CHtml::resolveValue(Object(Data), 'title')
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\helpers\CHtml.php(1217): CHtml::activeInputField('text', Object(Data), 'title', Array)
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\widgets\CActiveForm.php(658): CHtml::activeTextField(Object(Data), 'title', Array)
+#5 C:\wamp\www\password-keeper\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(181): CActiveForm->textField(Object(Data), 'title', Array)
+#6 C:\wamp\www\password-keeper\protected\extensions\bootstrap\widgets\input\TbInput.php(230): TbInputHorizontal->textField()
+#7 C:\wamp\www\password-keeper\protected\extensions\bootstrap\widgets\input\TbInputHorizontal.php(24): TbInput->run()
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(174): TbInputHorizontal->run()
+#9 C:\wamp\www\password-keeper\protected\extensions\bootstrap\widgets\TbActiveForm.php(497): CBaseController->widget('bootstrap.widge...', Array)
+#10 C:\wamp\www\password-keeper\protected\extensions\bootstrap\widgets\TbActiveForm.php(186): TbActiveForm->inputRow('text', Object(Data), 'title', NULL, Array)
+#11 C:\wamp\www\password-keeper\protected\views\site\update.php(17): TbActiveForm->textFieldRow(Object(Data), 'title', Array)
+#12 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#13 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#14 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#15 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('update', Array, true)
+#16 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(129): CController->render('update', Array)
+#17 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionUpdate()
+#18 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#19 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#20 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('update')
+#22 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/update')
+#23 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/password-keeper/site/update/1
+HTTP_REFERER=http://localhost/password-keeper/site/dashboard
+---
+2013/05/24 06:40:15 [error] [php] mail() [<a href='function.mail'>function.mail</a>]: Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() (C:\wamp\www\password-keeper\protected\controllers\SiteController.php:146)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#5 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/1
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (146)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/27 18:47:59 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootAlert" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\frameworks\yii\1.1.12\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(16): CBaseController->widget('bootstrap.widge...')
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#8 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#10 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#14 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#15 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/update/1
+---
+2013/05/27 18:53:50 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootAlert" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\frameworks\yii\1.1.12\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(16): CBaseController->widget('bootstrap.widge...')
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#8 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#10 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#14 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#15 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/update/1
+---
+2013/05/27 18:53:50 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootAlert" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\frameworks\yii\1.1.12\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(16): CBaseController->widget('bootstrap.widge...')
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#8 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#10 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#14 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#15 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/update/1
+---
+2013/05/27 18:53:51 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootAlert" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\frameworks\yii\1.1.12\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(16): CBaseController->widget('bootstrap.widge...')
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#8 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#10 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#14 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#15 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/update/1
+---
+2013/05/27 18:53:51 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootAlert" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\frameworks\yii\1.1.12\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(16): CBaseController->widget('bootstrap.widge...')
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#8 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#10 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#14 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#15 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/update/1
+---
+2013/05/27 18:53:52 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootAlert" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\frameworks\yii\1.1.12\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(16): CBaseController->widget('bootstrap.widge...')
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#8 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#10 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#14 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#15 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/update/1
+---
+2013/05/27 18:53:52 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootAlert" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\frameworks\yii\1.1.12\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(16): CBaseController->widget('bootstrap.widge...')
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#8 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#10 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#14 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#15 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/update/1
+---
+2013/05/27 18:53:53 [error] [exception.CException] exception 'CException' with message 'Alias "bootstrap.widgets.BootAlert" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\wamp\www\frameworks\yii\1.1.12\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWidgetFactory.php(147): YiiBase::import('bootstrap.widge...', true)
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'bootstrap.widge...', Array)
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(173): CBaseController->createWidget('bootstrap.widge...', Array)
+#3 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(16): CBaseController->widget('bootstrap.widge...')
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#8 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#10 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#14 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#15 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/update/1
+---
+2013/05/27 19:17:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Запрошенная страница не существует.' in C:\wamp\www\password-keeper\protected\controllers\SiteController.php:20
+Stack trace:
+#0 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(136): SiteController->loadDataModel('6')
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDelete()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('delete')
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/delete')
+#7 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/password-keeper/site/delete/6?ajax=dashboard-table
+HTTP_REFERER=http://localhost/password-keeper/site/dashboard
+---
+2013/05/27 19:30:07 [error] [php] bcmod() [<a href='function.bcmod'>function.bcmod</a>]: Division by zero (C:\wamp\www\password-keeper\protected\views\site\view.php:39)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): SiteController->renderFile()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): SiteController->renderPartial()
+#3 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(145): SiteController->render()
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionView()
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/1
+in C:\wamp\www\password-keeper\protected\views\site\view.php (39)
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (145)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/27 19:30:31 [error] [php] bcmod() [<a href='function.bcmod'>function.bcmod</a>]: Division by zero (C:\wamp\www\password-keeper\protected\views\site\view.php:39)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): SiteController->renderFile()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): SiteController->renderPartial()
+#3 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(145): SiteController->render()
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionView()
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/1
+in C:\wamp\www\password-keeper\protected\views\site\view.php (39)
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (145)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/27 19:30:32 [error] [php] bcmod() [<a href='function.bcmod'>function.bcmod</a>]: Division by zero (C:\wamp\www\password-keeper\protected\views\site\view.php:39)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): SiteController->renderFile()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): SiteController->renderPartial()
+#3 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(145): SiteController->render()
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionView()
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/1
+in C:\wamp\www\password-keeper\protected\views\site\view.php (39)
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (145)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/27 19:30:32 [error] [php] bcmod() [<a href='function.bcmod'>function.bcmod</a>]: Division by zero (C:\wamp\www\password-keeper\protected\views\site\view.php:39)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): SiteController->renderFile()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): SiteController->renderPartial()
+#3 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(145): SiteController->render()
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionView()
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/1
+in C:\wamp\www\password-keeper\protected\views\site\view.php (39)
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (145)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/27 19:30:32 [error] [php] bcmod() [<a href='function.bcmod'>function.bcmod</a>]: Division by zero (C:\wamp\www\password-keeper\protected\views\site\view.php:39)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): SiteController->renderFile()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): SiteController->renderPartial()
+#3 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(145): SiteController->render()
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionView()
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/1
+in C:\wamp\www\password-keeper\protected\views\site\view.php (39)
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (145)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/27 19:30:48 [error] [php] bcmod() [<a href='function.bcmod'>function.bcmod</a>]: Division by zero (C:\wamp\www\password-keeper\protected\views\site\view.php:39)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): SiteController->renderFile()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): SiteController->renderPartial()
+#3 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(145): SiteController->render()
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionView()
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/1
+in C:\wamp\www\password-keeper\protected\views\site\view.php (39)
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (145)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/27 19:30:50 [error] [php] bcmod() [<a href='function.bcmod'>function.bcmod</a>]: Division by zero (C:\wamp\www\password-keeper\protected\views\site\view.php:39)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): SiteController->renderInternal()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): SiteController->renderFile()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): SiteController->renderPartial()
+#3 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(145): SiteController->render()
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionView()
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#10 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/1
+in C:\wamp\www\password-keeper\protected\views\site\view.php (39)
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (145)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/27 19:51:32 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.salt" is not defined.' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\password-keeper\protected\views\site\view.php(38): CComponent->__get('salt')
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('view', Array, true)
+#5 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(145): CController->render('view', Array)
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionView()
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('view')
+#11 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/view')
+#12 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/password-keeper/site/1
+HTTP_REFERER=http://localhost/password-keeper/site/dashboard
+---
+2013/05/27 20:09:15 [error] [php] Trying to get property of non-object (C:\wamp\www\password-keeper\protected\controllers\SiteController.php:97)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/dashboard
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (97)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/27 20:09:16 [error] [php] Trying to get property of non-object (C:\wamp\www\password-keeper\protected\controllers\SiteController.php:97)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/dashboard
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (97)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/27 20:09:17 [error] [php] Trying to get property of non-object (C:\wamp\www\password-keeper\protected\controllers\SiteController.php:97)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/dashboard
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (97)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/27 20:09:17 [error] [php] Trying to get property of non-object (C:\wamp\www\password-keeper\protected\controllers\SiteController.php:97)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#4 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/dashboard
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (97)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/27 20:11:12 [error] [exception.CException] exception 'CException' with message 'Property "Data.1" is not defined.' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(144): CComponent->__get('1')
+#1 C:\wamp\www\frameworks\yii\1.1.12\base\CModel.php(593): CActiveRecord->__get('1')
+#2 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(96): CModel->offsetGet(1)
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#9 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/about
+---
+2013/05/27 20:11:13 [error] [exception.CException] exception 'CException' with message 'Property "Data.1" is not defined.' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(144): CComponent->__get('1')
+#1 C:\wamp\www\frameworks\yii\1.1.12\base\CModel.php(593): CActiveRecord->__get('1')
+#2 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(96): CModel->offsetGet(1)
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#9 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/about
+---
+2013/05/27 20:15:31 [error] [exception.CException] exception 'CException' with message 'Property "Data.decodePassword" is not defined.' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(144): CComponent->__get('decodePassword')
+#1 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('decodePassword')
+#2 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607): eval()
+#3 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CDataColumn.php(132): CComponent->evaluateExpression('$data->decodePa...', Array)
+#4 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent(0, Object(Data))
+#5 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(546): CGridColumn->renderDataCell(0)
+#6 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow(0)
+#7 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#8 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{items}')
+#11 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#12 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(174): CBaseListView->run()
+#13 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(54): CBaseController->widget('bootstrap.widge...', Array)
+#14 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#15 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#16 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#17 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#18 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#19 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#20 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#21 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#22 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#24 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#25 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/about
+---
+2013/05/27 20:15:58 [error] [exception.CException] exception 'CException' with message 'Data and its behaviors do not have a method or closure named "decodePassword".' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(226): CComponent->__call('decodePassword', Array)
+#1 C:\wamp\www\password-keeper\protected\models\Data.php(108): CActiveRecord->__call('decodePassword', Array)
+#2 C:\wamp\www\password-keeper\protected\models\Data.php(108): Data->decodePassword()
+#3 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(112): Data->getComplexityValue()
+#4 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(144): CComponent->__get('complexityValue')
+#5 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('complexityValue')
+#6 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607): eval()
+#7 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CDataColumn.php(132): CComponent->evaluateExpression('$data->complexi...', Array)
+#8 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent(0, Object(Data))
+#9 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(546): CGridColumn->renderDataCell(0)
+#10 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow(0)
+#11 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#12 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#13 [internal function]: CBaseListView->renderSection(Array)
+#14 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{items}')
+#15 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#16 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(174): CBaseListView->run()
+#17 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(54): CBaseController->widget('bootstrap.widge...', Array)
+#18 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#19 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#20 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#21 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#22 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#23 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#24 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#25 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#26 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#28 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#29 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/about
+---
+2013/05/27 20:15:58 [error] [exception.CException] exception 'CException' with message 'Data and its behaviors do not have a method or closure named "decodePassword".' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(226): CComponent->__call('decodePassword', Array)
+#1 C:\wamp\www\password-keeper\protected\models\Data.php(108): CActiveRecord->__call('decodePassword', Array)
+#2 C:\wamp\www\password-keeper\protected\models\Data.php(108): Data->decodePassword()
+#3 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(112): Data->getComplexityValue()
+#4 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(144): CComponent->__get('complexityValue')
+#5 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('complexityValue')
+#6 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607): eval()
+#7 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CDataColumn.php(132): CComponent->evaluateExpression('$data->complexi...', Array)
+#8 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent(0, Object(Data))
+#9 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(546): CGridColumn->renderDataCell(0)
+#10 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow(0)
+#11 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#12 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#13 [internal function]: CBaseListView->renderSection(Array)
+#14 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{items}')
+#15 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#16 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(174): CBaseListView->run()
+#17 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(54): CBaseController->widget('bootstrap.widge...', Array)
+#18 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#19 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#20 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#21 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#22 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#23 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#24 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#25 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#26 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#28 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#29 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/about
+---
+2013/05/27 20:15:59 [error] [exception.CException] exception 'CException' with message 'Data and its behaviors do not have a method or closure named "decodePassword".' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(226): CComponent->__call('decodePassword', Array)
+#1 C:\wamp\www\password-keeper\protected\models\Data.php(108): CActiveRecord->__call('decodePassword', Array)
+#2 C:\wamp\www\password-keeper\protected\models\Data.php(108): Data->decodePassword()
+#3 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(112): Data->getComplexityValue()
+#4 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(144): CComponent->__get('complexityValue')
+#5 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('complexityValue')
+#6 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607): eval()
+#7 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CDataColumn.php(132): CComponent->evaluateExpression('$data->complexi...', Array)
+#8 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent(0, Object(Data))
+#9 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(546): CGridColumn->renderDataCell(0)
+#10 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow(0)
+#11 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#12 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#13 [internal function]: CBaseListView->renderSection(Array)
+#14 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{items}')
+#15 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#16 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(174): CBaseListView->run()
+#17 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(54): CBaseController->widget('bootstrap.widge...', Array)
+#18 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#19 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#20 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#21 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#22 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#23 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#24 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#25 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#26 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#28 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#29 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/about
+---
+2013/05/27 20:15:59 [error] [exception.CException] exception 'CException' with message 'Data and its behaviors do not have a method or closure named "decodePassword".' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(226): CComponent->__call('decodePassword', Array)
+#1 C:\wamp\www\password-keeper\protected\models\Data.php(108): CActiveRecord->__call('decodePassword', Array)
+#2 C:\wamp\www\password-keeper\protected\models\Data.php(108): Data->decodePassword()
+#3 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(112): Data->getComplexityValue()
+#4 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(144): CComponent->__get('complexityValue')
+#5 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('complexityValue')
+#6 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607): eval()
+#7 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CDataColumn.php(132): CComponent->evaluateExpression('$data->complexi...', Array)
+#8 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent(0, Object(Data))
+#9 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(546): CGridColumn->renderDataCell(0)
+#10 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow(0)
+#11 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#12 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#13 [internal function]: CBaseListView->renderSection(Array)
+#14 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{items}')
+#15 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#16 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(174): CBaseListView->run()
+#17 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(54): CBaseController->widget('bootstrap.widge...', Array)
+#18 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#19 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#20 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#21 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#22 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#23 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#24 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#25 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#26 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#28 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#29 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/about
+---
+2013/05/27 20:16:00 [error] [exception.CException] exception 'CException' with message 'Data and its behaviors do not have a method or closure named "decodePassword".' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(226): CComponent->__call('decodePassword', Array)
+#1 C:\wamp\www\password-keeper\protected\models\Data.php(108): CActiveRecord->__call('decodePassword', Array)
+#2 C:\wamp\www\password-keeper\protected\models\Data.php(108): Data->decodePassword()
+#3 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(112): Data->getComplexityValue()
+#4 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(144): CComponent->__get('complexityValue')
+#5 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('complexityValue')
+#6 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607): eval()
+#7 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CDataColumn.php(132): CComponent->evaluateExpression('$data->complexi...', Array)
+#8 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent(0, Object(Data))
+#9 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(546): CGridColumn->renderDataCell(0)
+#10 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow(0)
+#11 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#12 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#13 [internal function]: CBaseListView->renderSection(Array)
+#14 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{items}')
+#15 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#16 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(174): CBaseListView->run()
+#17 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(54): CBaseController->widget('bootstrap.widge...', Array)
+#18 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#19 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#20 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#21 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#22 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#23 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#24 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#25 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#26 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#28 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#29 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/about
+---
+2013/05/27 20:16:15 [error] [exception.CException] exception 'CException' with message 'Data and its behaviors do not have a method or closure named "decodePassword".' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(226): CComponent->__call('decodePassword', Array)
+#1 C:\wamp\www\password-keeper\protected\models\Data.php(108): CActiveRecord->__call('decodePassword', Array)
+#2 C:\wamp\www\password-keeper\protected\models\Data.php(108): Data->decodePassword()
+#3 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(112): Data->getComplexityValue()
+#4 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(144): CComponent->__get('complexityValue')
+#5 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('complexityValue')
+#6 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607): eval()
+#7 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CDataColumn.php(132): CComponent->evaluateExpression('$data->complexi...', Array)
+#8 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent(0, Object(Data))
+#9 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(546): CGridColumn->renderDataCell(0)
+#10 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow(0)
+#11 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#12 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#13 [internal function]: CBaseListView->renderSection(Array)
+#14 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{items}')
+#15 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#16 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(174): CBaseListView->run()
+#17 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(54): CBaseController->widget('bootstrap.widge...', Array)
+#18 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#19 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#20 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#21 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#22 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#23 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#24 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#25 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#26 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#28 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#29 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/about
+---
+2013/05/27 20:16:15 [error] [exception.CException] exception 'CException' with message 'Data and its behaviors do not have a method or closure named "decodePassword".' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(226): CComponent->__call('decodePassword', Array)
+#1 C:\wamp\www\password-keeper\protected\models\Data.php(108): CActiveRecord->__call('decodePassword', Array)
+#2 C:\wamp\www\password-keeper\protected\models\Data.php(108): Data->decodePassword()
+#3 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(112): Data->getComplexityValue()
+#4 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(144): CComponent->__get('complexityValue')
+#5 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('complexityValue')
+#6 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607): eval()
+#7 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CDataColumn.php(132): CComponent->evaluateExpression('$data->complexi...', Array)
+#8 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent(0, Object(Data))
+#9 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(546): CGridColumn->renderDataCell(0)
+#10 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow(0)
+#11 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#12 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#13 [internal function]: CBaseListView->renderSection(Array)
+#14 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{items}')
+#15 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#16 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(174): CBaseListView->run()
+#17 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(54): CBaseController->widget('bootstrap.widge...', Array)
+#18 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#19 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#20 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#21 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#22 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#23 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#24 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#25 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#26 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#28 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#29 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/about
+---
+2013/05/27 20:16:16 [error] [exception.CException] exception 'CException' with message 'Data and its behaviors do not have a method or closure named "decodePassword".' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(226): CComponent->__call('decodePassword', Array)
+#1 C:\wamp\www\password-keeper\protected\models\Data.php(108): CActiveRecord->__call('decodePassword', Array)
+#2 C:\wamp\www\password-keeper\protected\models\Data.php(108): Data->decodePassword()
+#3 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(112): Data->getComplexityValue()
+#4 C:\wamp\www\frameworks\yii\1.1.12\db\ar\CActiveRecord.php(144): CComponent->__get('complexityValue')
+#5 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607) : eval()'d code(1): CActiveRecord->__get('complexityValue')
+#6 C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php(607): eval()
+#7 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CDataColumn.php(132): CComponent->evaluateExpression('$data->complexi...', Array)
+#8 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridColumn.php(145): CDataColumn->renderDataCellContent(0, Object(Data))
+#9 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(546): CGridColumn->renderDataCell(0)
+#10 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(517): CGridView->renderTableRow(0)
+#11 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\grid\CGridView.php(427): CGridView->renderTableBody()
+#12 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(161): CGridView->renderItems()
+#13 [internal function]: CBaseListView->renderSection(Array)
+#14 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(144): preg_replace_callback('/{(\w+)}/', Array, '{items}')
+#15 C:\wamp\www\frameworks\yii\1.1.12\zii\widgets\CBaseListView.php(129): CBaseListView->renderContent()
+#16 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(174): CBaseListView->run()
+#17 C:\wamp\www\password-keeper\protected\views\site\dashboard.php(54): CBaseController->widget('bootstrap.widge...', Array)
+#18 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(127): require('C:\wamp\www\pas...')
+#19 C:\wamp\www\frameworks\yii\1.1.12\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\pas...', Array, true)
+#20 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\pas...', Array, true)
+#21 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): CController->renderPartial('dashboard', Array, true)
+#22 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(95): CController->render('dashboard', Array)
+#23 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionDashboard()
+#24 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#25 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#26 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('dashboard')
+#28 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/dashboard')
+#29 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/password-keeper/site/dashboard
+HTTP_REFERER=http://localhost/password-keeper/site/about
+---
+2013/05/30 16:48:23 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "decodePassword".' in C:\wamp\www\frameworks\yii\1.1.12\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(121): CComponent->__call('decodePassword', Array)
+#1 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(121): SiteController->decodePassword('MTIzNDU1MWEzYjh...', '51a3b8a9b8984')
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionUpdate()
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('update')
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/update')
+#8 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/password-keeper/site/update/1
+HTTP_REFERER=http://localhost/password-keeper/site/dashboard
+---
+2013/05/30 17:19:44 [error] [php] Undefined variable: model (C:\wamp\www\password-keeper\protected\views\site\add.php:23)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(167): SiteController->render()
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionAdd()
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/add
+in C:\wamp\www\password-keeper\protected\views\site\add.php (23)
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (167)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/30 18:44:45 [error] [php] Undefined variable: model (C:\wamp\www\password-keeper\protected\views\site\preferences.php:25)
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(870): SiteController->renderFile()
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(783): SiteController->renderPartial()
+#2 C:\wamp\www\password-keeper\protected\controllers\SiteController.php(111): SiteController->render()
+#3 C:\wamp\www\frameworks\yii\1.1.12\web\actions\CInlineAction.php(50): SiteController->actionPreferences()
+#4 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): SiteController->run()
+#8 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController()
+#9 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\password-keeper\index.php(13): CWebApplication->run()
+REQUEST_URI=/password-keeper/site/preferences
+in C:\wamp\www\password-keeper\protected\views\site\preferences.php (25)
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (111)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/30 20:34:47 [warning] [application] Failed to set unsafe attribute "new_password" of "Users".
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (115)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/30 20:34:48 [warning] [application] Failed to set unsafe attribute "new_password" of "Users".
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (115)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/30 20:34:55 [warning] [application] Failed to set unsafe attribute "new_password" of "Users".
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (115)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/30 20:36:39 [warning] [application] Failed to set unsafe attribute "email" of "Users".
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (115)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/30 20:36:39 [warning] [application] Failed to set unsafe attribute "new_password" of "Users".
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (115)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/30 20:36:49 [warning] [application] Failed to set unsafe attribute "email" of "Users".
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (115)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/30 20:36:49 [warning] [application] Failed to set unsafe attribute "new_password" of "Users".
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (115)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/30 20:37:33 [warning] [application] Failed to set unsafe attribute "email" of "Users".
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (115)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/30 20:37:33 [warning] [application] Failed to set unsafe attribute "new_password" of "Users".
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (115)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/05/30 20:47:58 [warning] [application] Failed to set unsafe attribute "new_password" of "Users".
+in C:\wamp\www\password-keeper\protected\controllers\SiteController.php (115)
+in C:\wamp\www\password-keeper\index.php (13)
+2013/06/02 17:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "password-keeper/images/footer-line.png".' in C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('password-keeper...')
+#1 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/password-keeper/images/footer-line.png
+HTTP_REFERER=http://password-keeper.local/site/about
+---
+2013/06/02 17:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "password-keeper/images/concept-title.png".' in C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('password-keeper...')
+#1 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/password-keeper/images/concept-title.png
+HTTP_REFERER=http://password-keeper.local/site/about
+---
+2013/06/02 17:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "password-keeper/images/website-title.png".' in C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('password-keeper...')
+#1 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/password-keeper/images/website-title.png
+HTTP_REFERER=http://password-keeper.local/site/about
+---
+2013/06/02 17:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "password-keeper/images/retina_wood.png".' in C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('password-keeper...')
+#1 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/password-keeper/images/retina_wood.png
+HTTP_REFERER=http://password-keeper.local/site/about
+---
+2013/06/02 17:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "password-keeper/images/technologies.png".' in C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('password-keeper...')
+#1 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/password-keeper/images/technologies.png
+HTTP_REFERER=http://password-keeper.local/site/about
+---
+2013/06/02 17:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "password-keeper/images/intro-title.png".' in C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('password-keeper...')
+#1 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/password-keeper/images/intro-title.png
+HTTP_REFERER=http://password-keeper.local/site/about
+---
+2013/06/02 17:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "password-keeper/images/footer-background.png".' in C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('password-keeper...')
+#1 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/password-keeper/images/footer-background.png
+HTTP_REFERER=http://password-keeper.local/site/about
+---
+2013/06/02 17:40:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php:287
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('favicon.ico')
+#1 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2013/07/22 13:57:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "site".' in C:\wamp\www\frameworks\yii\1.1.12\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\frameworks\yii\1.1.12\web\CController.php(271): CController->missingAction('site')
+#1 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(283): CController->run('site')
+#2 C:\wamp\www\frameworks\yii\1.1.12\web\CWebApplication.php(142): CWebApplication->runController('site/site/about')
+#3 C:\wamp\www\frameworks\yii\1.1.12\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\password-keeper\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/password-keeper/site/site/about
+HTTP_REFERER=http://localhost/password-keeper/site/signIn
+---

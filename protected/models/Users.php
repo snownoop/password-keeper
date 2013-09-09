@@ -40,9 +40,9 @@ class Users extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('email', 'length', 'max'=>100),
-            array('email, password, repeat_password', 'required'),
+            array('email, password, repeat_password, ', 'required'),
 //            array('email', 'unique', 'message' => 'email already exist.'),
-			array('password, repeat_password, salt', 'length', 'max'=>50, 'min' =>6),
+			array('password, repeat_password', 'length', 'max'=>50, 'min' =>5),
             array('repeat_password', 'compare', 'compareAttribute'=>'password'),
             array('email', 'email'),
 			// The following rule is used by search().
@@ -72,7 +72,7 @@ class Users extends CActiveRecord
 			'email' => 'Email',
 			'password' => 'Password',
 			'salt' => 'Salt',
-            'repeat_password' => 'Repeat password'
+            'repeat_password' => 'Repeat password',
 		);
 	}
 
@@ -119,9 +119,11 @@ class Users extends CActiveRecord
         $criteria->params = array(':Email' => $this->email);
 
         $user = Users::model()->find($criteria);
-        if($user)
+        if(count($user) > 0)
         {
-            //To be continued ...
+            Yii::app()->user->setFlash('error', '<strong>Oh snap!</strong> Email is already in use');
+            return false;
         }
+        return true;
     }
 }

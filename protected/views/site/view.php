@@ -1,6 +1,5 @@
 <?php
-
-$this->pageTitle = $model->name.'-view';
+$this->pageTitle = $model->name . '-view';
 ?>
 
 <div class="row">
@@ -8,23 +7,34 @@ $this->pageTitle = $model->name.'-view';
         <h1>Details:</h1>
 
 
-        <?php $this->widget('bootstrap.widgets.TbDetailView', array(
-            'type' => '',
-            'data'=>$model,
-            'attributes'=>array(
-                array('name'=>'name', 'label'=>'Resourse name'),
-                array('name'=>'login', 'label'=>'Login'),
-                array('name'=>'password', 'label'=>'Password'),
-                array(
-                    'name' => 'complexity',
-                    'header' => 'Complexity',
-                    'value' => $model->getComplexityValue(),
-                    'type' => 'html',
-
-                ),
-                array('name'=>'notes', 'label'=>'Notes'),
-            ),
+        <?php $form = $this->beginWidget('bootstrap.widgets.TbActiveForm', array(
+            'id' => 'add-image-form',
+            'type' => 'horizontal',
+            'enableAjaxValidation' => false,
+            'htmlOptions' => array('enctype' => 'multipart/form-data'),
         )); ?>
+
+        <div class="note-back"></div>
+        <div class="glasses"></div>
+        <div class="note-bottom"></div>
+
+
+        <fieldset>
+
+            <?php echo $form->textFieldRow($model, 'name', array('class' => 'input-xxlarge update-input view-input', 'disabled' => 'disabled')); ?>
+            <?php echo $form->textFieldRow($model, 'login', array('class' => 'input-xxlarge update-input view-input', 'disabled' => 'disabled')); ?>
+            <?php echo $form->textFieldRow($model, 'password', array('class' => 'input-xxlarge update-input view-input', 'disabled' => 'disabled')); ?>
+            <?php echo $form->textAreaRow($model, 'notes', array('class' => 'input-xxlarge update-input view-input', 'rows' => 16, 'disabled' => 'disabled')); ?>
+
+        </fieldset>
+
+        <div class="buttons">
+            <div class="button-back">
+                <?php $this->widget('bootstrap.widgets.TbButton', array('label' => 'Back', 'url' => array('/site/dashboard'))); ?>
+            </div>
+        </div>
+
+        <?php $this->endWidget(); ?>
 
     </div>
 </div>

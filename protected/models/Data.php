@@ -15,6 +15,7 @@ class Data extends CActiveRecord
 {
 
     public $complexity;
+    public $salt;
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -73,6 +74,7 @@ class Data extends CActiveRecord
 			'login' => 'Login',
 			'password' => 'Password',
 			'notes' => 'Notes',
+            'salt' => 'Salt',
 		);
 	}
 
@@ -139,6 +141,8 @@ class Data extends CActiveRecord
     private function getPasswordStrength()
     {
 
+        $this->password = $this->getDecodedPassword();
+
         if(strlen($this->password) >= 10)
             $length = 10;
         else
@@ -167,6 +171,22 @@ class Data extends CActiveRecord
         $strength = (($length*10)-20) + ($numeric*10) + ($symbols*15) + ($upper*10) + ($letters*10);
 
         return $strength;
+    }
+
+    public function BeforeSave()
+    {
+        if (parent::beforeSave()) {
+            $this->salt = uniqid();
+            $this->password = base64_encode($this->password . $this->salt);
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public function getDecodedPassword()
+    {
+        return str_replace($this->salt, "", base64_decode($this->password));
     }
 
 }

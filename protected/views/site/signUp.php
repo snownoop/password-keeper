@@ -10,8 +10,11 @@
 $this->pageTitle= 'Sign up';
 ?>
 
+<?php $this->widget('bootstrap.widgets.TbAlert'); ?>
+
 <div class="row">
     <div class="span6 offset3" style="margin-top: 50px;">
+
         <?php $this->beginWidget('bootstrap.widgets.TbHeroUnit', array(
             'heading' => 'Sign up',
         )); ?>

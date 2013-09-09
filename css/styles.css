@@ -1,87 +1,80 @@
-body, html
-{
-    margin:0;
-    padding:0;
-    width:100%;
-    height:100%;
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
-#main-container
-{
-    position:relative;
+#main-container {
+    position: relative;
     min-height: 100%;
     width: 100%;
+    min-width: 1250px;
 }
 
-.wrapper .container
-{
+.wrapper .container {
     padding-top: 40px;
+    width: 1250px;
 }
 
-.wrapper.main_wrapper
-{
+.wrapper.main_wrapper {
     background: url(/password-keeper/images/retina_wood.png) repeat;
 }
 
-.wrapper .container #dashboard-table th
-{
+.wrapper .container #dashboard-table th {
     text-align: center;
 }
 
-.wrapper .container #dashboard-table table
-{
+.wrapper .container #dashboard-table table {
     border-spacing: 0;
     border-color: #000000;
 }
 
-.wrapper .container #dashboard-table tr.selected td
-{
+.wrapper .container #dashboard-table tr.selected td {
     background: none;
 }
 
-.block{}
+.block {
+}
 
-.block_title
-{
+.block_title {
     width: 868px;
     margin: 45px auto;
     height: 56px;
 }
 
-.block_1{}
+.block_1 {
+}
 
-.block_1 .block_title
-{
+.block_1 .block_title {
     background: url(/password-keeper/images/intro-title.png);
 }
-.block_2{}
 
-.block_2 .block_title
-{
+.block_2 {
+}
+
+.block_2 .block_title {
     background: url(/password-keeper/images/concept-title.png);
 }
 
-.block_3{}
+.block_3 {
+}
 
-.block_3 .block_title
-{
+.block_3 .block_title {
     background: url(/password-keeper/images/website-title.png);
 }
 
-.block .block_content
-{
+.block .block_content {
     width: 1000px;
     margin: 0 auto;
 }
 
-.block .block_image
-{
+.block .block_image {
     display: inline-block;
     vertical-align: middle;
 }
 
-.block .block_text
-{
+.block .block_text {
     font-size: 18px;
     line-height: 30px;
     color: #000;
@@ -90,97 +83,216 @@ body, html
     vertical-align: middle;
 }
 
-.block_1 .block_text
-{
+.block_1 .block_text {
     margin-left: 45px;
     width: 735px;
 }
 
-.block_2 .block_text
-{
+.block_2 .block_text {
     margin-left: 45px;
     width: 650px;
 }
 
-.block_3 .block_text
-{
-    width: 650px;
-    margin-right: 45px;
+.block_3 .block_text {
+    margin-top: 45px;
 }
 
-footer
+.block_3 .block_image
 {
+    background: url(/password-keeper/images/technologies.png);
+    display: block;
+    width: 720px;
+    height: 103px;
+    margin: 0 auto;
+}
+
+footer {
     height: 70px; /* высота футера */
     color: #fff;
     margin-top: -70px;
     position: relative;
 }
 
-footer .footer-line
-{
+footer .footer-line {
     background: url(/password-keeper/images/footer-line.png) repeat-x;
     height: 10px;
     width: 100%;
+    min-width: 1250px;
 }
 
-footer .footer-content
-{
+footer .footer-content {
     background: url(/password-keeper/images/footer-background.png) repeat;
     width: 100%;
+    min-width: 1250px;
 }
 
-footer .footer-content .footer-content-centered
-{
+footer .footer-content .footer-content-centered {
     margin: 0 auto;
-    width: 1170px;
+    width: 1250px;
 }
 
-footer .footer-content
-{
+footer .footer-content {
     font-size: 14px;
     font-weight: bold;
     color: #fff;
 }
 
-footer .footer-content .signature
-{
+footer .footer-content .signature {
     margin: 20px 0 20px 0;
     float: left;
 }
 
-footer .footer-content .footer-contact
-{
+footer .footer-content .footer-contact {
     margin: 20px 0 20px 0;
     float: right;
 }
-footer .footer-content .footer-contact a
-{
+
+footer .footer-content .footer-contact a {
     color: #fff;
 }
-footer .footer-content .footer-contact a:hover
-{
+
+footer .footer-content .footer-contact a:hover {
     color: #00D5FF;
 }
 
-
-.footer-correction
-{
+.footer-correction {
     height: 115px;
 }
 
-.clear
-{
+.clear {
     clear: both;
 }
 
-
-.progress
-{
+.progress {
     margin: 0 !important;
 }
 
 /*Fix width of complexity progress bar in view page.*/
-.detail-view tr td .progress
-{
+.detail-view tr td .progress {
     width: 174px;
+}
+
+.update-input {
+    opacity: 1;
+    background: none;
+    background-color: transparent !important;
+    border: none !important;
+    -webkit-box-shadow: none !important;
+    color: black !important;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.view-input
+{
+    cursor: default !important;
+}
+
+.control-group
+{
+    position: relative;
+    z-index: 3;
+    margin-bottom: 12px !important;
+}
+
+.control-group .control-label
+{
+    width: auto !important;
+    font-weight: bold;
+    cursor: default !important;
+}
+
+.control-group textarea
+{
+    width: 600px;
+    overflow: hidden;
+}
+
+.control-group .controls
+{
+    margin-left: 85px !important;
+}
+
+textarea.update-input
+{
+    resize: none;
+}
+
+.note-back
+{
+    z-index: 2;
+    position: absolute;
+    top: 101px;
+    left: 0px;
+    width: 764px;
+    height: 444px;
+    background: url(/password-keeper/images/note-bg.png) repeat-y;
+}
+
+.karandash
+{
+    z-index: 4;
+    position: absolute;
+    top: 200px;
+    left: 755px;
+    width: 500px;
+    height: 447px;
+    background: url(/password-keeper/images/pencil.png) no-repeat;
+}
+
+.note-bottom
+{
+    position: absolute;
+    top: 545px;
+    left: 0px;
+    width: 764px;
+    height: 78px;
+    background: url(/password-keeper/images/note-bottom.png) no-repeat;
+}
+
+.glasses
+{
+    transform:rotate(310deg);
+    -ms-transform:rotate(310deg); /* IE 9 */
+    -webkit-transform:rotate(310deg); /* Safari and Chrome */
+
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    width: 640px;
+    height: 427px;
+    background: url(/password-keeper/images/glasses.png) no-repeat;
+}
+
+.cogwheel
+{
+    /*transform:rotate(310deg);*/
+    /*-ms-transform:rotate(310deg); *//* IE 9 */
+    /*-webkit-transform:rotate(310deg); *//* Safari and Chrome */
+
+    position: absolute;
+    top: 100px;
+    left: 700px;
+    width: 400px;
+    height: 273px;
+    background: url(/password-keeper/images/cogwheel.png) no-repeat;
+}
+
+.buttons
+{
+    margin-top: 30px;
+}
+
+.button-save
+{
+    width: 60px;
+    margin-left: 620px;
+    display: inline-block;
+}
+
+.button-back
+{
+    display: inline-block;
+    width: 60px;
+    margin-left: -30px;
 }
